@@ -1,0 +1,35 @@
+@use '../variables'
+@use '../mixins' 
+    
+#information
+    @include mixins.center
+    flex-direction: column
+    padding: 1rem
+    padding-top: .5rem
+    margin-bottom: 1rem
+    text-align: left
+    width: 80%
+    border-radius: variables.$card-border-radius
+
+    .info-card
+        @include mixins.center
+        justify-content: start
+        gap: 1rem
+        border-bottom: 1px solid #444
+        width: 100%
+
+        h3
+            color: variables.$text-color-secondary
+            font-size: .8rem
+            margin-bottom: .5rem
+
+        p
+            color: variables.$text-color
+            justify-content: end
+
+        svg
+            padding: 0.4rem
+            width: 2rem
+            height: 2rem
+            border-radius: variables.$card-border-radius
+            color: variables.$text-color-secondary
