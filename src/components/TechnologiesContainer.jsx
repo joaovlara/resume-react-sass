@@ -1,18 +1,30 @@
 import {
-  DiCss3,
+  DiGit,
   DiJsBadge,
   DiReact,
 } from "react-icons/di";
-import { FaFigma } from "react-icons/fa";
+import { FiFigma } from "react-icons/fi";
 
 import "../styles/components/technologiescontainer.sass";
 
-const technologies = [ 
+const technologies = [
 
-  { id: "js", name: "JavaScript", icon: <DiJsBadge /> },  
-  { id: "react", name: "React", icon: <DiReact /> },
-  { id: "css", name: "CSS3", icon: <DiCss3 /> },
-  { id: "figma", name: "Figma", icon: <FaFigma />},
+  {
+    id: "js", name: "JavaScript", icon: <DiJsBadge />,
+    text: "Manipulação do DOM, Frameworks, Bibliotecas, APIs, HTML e CSS "
+  },
+  {
+    id: "react", name: "React", icon: <DiReact />,
+    text: "React Fundamentals, Componentização, Hooks, Roteamento, APIs e Bibliotecas "
+  },
+  {
+    id: "git", name: "Git", icon: <DiGit />,
+    text: "Versionamento, Git Workflow, Branching, Merging, GitHub e GitLab "
+  },
+  {
+    id: "figma", name: "Figma", icon: <FiFigma />,
+    text: "Prototipagem, Design de Interface, Responsividade, Feedback e Iteração "
+  },
 ];
 
 const TechnologiesContainer = () => {
@@ -22,10 +34,10 @@ const TechnologiesContainer = () => {
       <div className="technologies-grid">
         {technologies.map((tech) => (
           <div className="technology-card" id={tech.id} key={tech.id}>
-            {tech.icon}
+            <span>{tech.icon}</span>
             <div className="technology-info">
               <h3>{tech.name}</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+              <p>{tech.text}</p>
             </div>
           </div>
         ))}

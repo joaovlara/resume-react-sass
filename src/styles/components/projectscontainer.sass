@@ -1,0 +1,37 @@
+@use '../variables'
+@use '../mixins'
+  
+.projects-container
+
+
+    .cards-grid
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        gap: 1.5rem
+
+    .project-card
+        border: 1px solid #333
+        border-radius: variables.$card-border-radius 
+
+        h3
+            color: variables.$text-color
+
+    .card-info
+        padding: .4rem
+
+    .btn-card
+        cursor: pointer
+        transition: .4s
+        background-color: transparent
+        color: variables.$text-color-secondary
+        border: solid 1px #333
+        text-decoration: none
+        width: 100%
+
+
+        &:hover 
+            color: variables.$bg-color
+            background: variables.$text-color
+
+        
