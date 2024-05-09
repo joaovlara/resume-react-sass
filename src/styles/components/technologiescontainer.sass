@@ -1,6 +1,6 @@
 @use '../variables'
 @use '../mixins'
-    
+
 .technologies-container
     margin-bottom: 1rem
 
@@ -11,14 +11,19 @@
         gap: 1.5rem
 
     .technology-info
-        padding-top: 1rem    
+        padding-top: 1rem
         padding-left: 1rem
 
     .technology-card
         @include mixins.center
         border: 1px solid #333
         width: 45%
-        border-radius: variables.$card-border-radius 
+        border-radius: variables.$card-border-radius
+        @media screen
+        @media (max-width:425px)
+            width: 100%
+        @media ( width: 768px)
+            width: 100%
 
 
         h3
@@ -40,7 +45,6 @@
             padding-left: 1rem
             color: #F0DB4F
 
-  
     #react
         svg
             color: #61DAFB

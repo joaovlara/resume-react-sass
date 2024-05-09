@@ -15,7 +15,7 @@
     h2  
         margin-top: 1rem
         color: variables.$text-color
-
+        @include mixins.typing-effect($duration: 2s)
 
     img
         max-width: 60%
@@ -27,6 +27,8 @@
         border-radius: variables.$card-border-radius
         margin-top: 1rem
         padding: .8rem 1.2rem
+        @include mixins.typing-effect($duration: 4s)
+
 
     .btn
         @include mixins.btn
