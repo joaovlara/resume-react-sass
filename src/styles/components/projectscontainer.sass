@@ -1,8 +1,7 @@
 @use '../variables'
 @use '../mixins'
-  
-.projects-container
 
+.projects-container
 
     .cards-grid
         display: flex
@@ -12,7 +11,8 @@
 
     .project-card
         border: 1px solid #333
-        border-radius: variables.$card-border-radius 
+        position: relative
+        overflow: hidden
 
         h3
             color: variables.$text-color
@@ -27,10 +27,13 @@
         color: variables.$text-color-secondary
         border: solid 1px #333
         text-decoration: none
+        display: block
+        position: absolute
+        top: 0
+        left: 0
         width: 100%
+        height: 100%
 
-        &:hover 
+        &:hover
             color: variables.$bg-color
             background: variables.$text-color
-
-        

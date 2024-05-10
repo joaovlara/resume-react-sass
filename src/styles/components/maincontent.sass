@@ -4,7 +4,6 @@
 #main-content
     background-color: variables.$bg-color
     flex: 2 1 0
-    border-radius: variables.$container-border-radius
     padding: 3rem
 
     section
@@ -12,10 +11,10 @@
         flex-direction: column
 
     h2
+        @include mixins.center
         color: variables.$text-color
         font-size: 1.5rem
         margin-bottom: 1.3rem
-        @include mixins.center
         justify-content: start
         gap: 1rem      
 
@@ -23,11 +22,9 @@
         color: variables.$text-color-secondary
         font-size: .8rem
         margin-bottom: 1rem
-        line-height: 1.3rem
-        // @include mixins.typing-effect($duration: 5s)
-        
+        line-height: 1.3rem        
         
     .btn
-        align-self: start
         @include mixins.btn
+        align-self: start
         

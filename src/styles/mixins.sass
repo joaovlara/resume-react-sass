@@ -12,19 +12,12 @@
     border: solid 1px
     border-color: variables.$text-color-secondary
     text-decoration: none
-    border-radius: 3rem
 
     &:hover
         color: variables.$bg-color
         background: variables.$text-color
 
-@mixin gradient-border
-    content: ""
-    background: variables.$gradient
-    height: 3px
-    width: 30%
-
-=typing-effect($duration: 1s)
+@mixin typing-effect($duration: 1s)
   overflow: hidden
   white-space: nowrap
   animation: typing $duration steps(40, end)
@@ -34,7 +27,3 @@
       width: 0
     to
       width: 100%
-
-// Exemplo de uso:
-.typing-text
-  +typing-effect(3s) // Defina a duração da animação

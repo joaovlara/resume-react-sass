@@ -1,20 +1,22 @@
 import React from "react";
 import "../styles/components/projectscontainer.sass";
-import Avatar from "../img/img.png";
+import calendar from "../img/calendar.jpg";
+import crud from "../img/crud.jpg";
+import weather from "../img/weather.jpg";
 
 const projects = [
   {
-    id: "1", nome: "Calendar", img: Avatar,
+    id: "1", nome: "Calendar", img: calendar,
     link: "https://github.com/joaovlara/calendar.git",
     text: "Descrição do projeto 1"
   },
   {
-    id: "2", nome: "Game-Hub", img: Avatar,
-    link: "https://github.com/joaovlara/game-hub.git",
+    id: "2", nome: "Crud-Fullstack", img: crud,
+    link: "https://github.com/joaovlara/CRUD-FullStack.git",
     text: "Descrição do projeto 2"
   },
   {
-    id: "3", nome: "Weather-App", img: Avatar,
+    id: "3", nome: "Weather-App", img: weather,
     link: "https://github.com/joaovlara/weather-app.git",
     text: "Descrição do projeto 3"
   }
@@ -34,11 +36,10 @@ const ProjectsContainer = () => {
               <p className="card-text">{project.text}</p>
             </div>
 
-            <button href={project.link} className="btn-card">Ver no GitHub</button>
+            <a href={project.link} className="btn-card" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
           </div>
         ))}
       </div>
-
     </section>
   );
 };

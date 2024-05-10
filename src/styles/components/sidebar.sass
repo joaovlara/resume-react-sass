@@ -4,7 +4,6 @@
 #sidebar
     background-color: variables.$bg-color
     flex: 1 1 0
-    border-radius: variables.$container-border-radius
     display: flex
     flex-direction: column
     align-items: center
@@ -15,7 +14,6 @@
     h2  
         margin-top: 1rem
         color: variables.$text-color
-        @include mixins.typing-effect($duration: 2s)
 
     img
         max-width: 60%
@@ -23,12 +21,9 @@
 
     .title
         color: variables.$text-color-secondary
-        background-color: variables.$bg-color-secondary
-        border-radius: variables.$card-border-radius
+        border: solid 1px 
         margin-top: 1rem
         padding: .8rem 1.2rem
-        @include mixins.typing-effect($duration: 4s)
-
 
     .btn
         @include mixins.btn
