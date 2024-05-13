@@ -31,7 +31,9 @@
 
         svg
             font-size: 4.5rem
-            color: variables.$text-color       
+            color: variables.$text-color
+            @include mixins.delayed-appear(5s)
+       
     #js
         svg
             padding-left: 1rem

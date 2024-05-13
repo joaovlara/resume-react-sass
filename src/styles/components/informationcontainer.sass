@@ -9,19 +9,24 @@
     margin-bottom: 1rem
     min-width: 75%
 
-    .info-card
-        @include mixins.center
-        justify-content: start
+    .info-card    
         gap: 1rem
-        border-bottom: 1px solid variables.$text-color-secondary
         width: 100%
+        border-bottom: 1px solid variables.$text-color-secondary
     
+    .info-typing
         p
-            color: variables.$text-color
-            justify-content: end
+        padding: .5rem
+        color: variables.$text-color
 
         svg
-            padding: 0.4rem
-            width: 2rem
-            height: 2rem
             color: variables.$text-color-secondary
+
+    #phone
+        @include mixins.typing-effect($duration: 2s)
+
+    #email
+        @include mixins.typing-effect($duration: 4s)
+
+    #pin
+        @include mixins.typing-effect($duration: 6s)
