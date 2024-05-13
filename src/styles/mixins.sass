@@ -1,29 +1,43 @@
 @use 'variables'
 
 @mixin center
-    display: flex
-    justify-content: center
-    align-items: center
+  display: flex
+  justify-content: center
+  align-items: center
 
 @mixin btn
-    background-color: transparent
-    padding: 1rem 1.2rem
-    color: variables.$text-color-secondary
-    border: solid 1px
-    border-color: variables.$text-color-secondary
-    text-decoration: none
+  background-color: transparent
+  padding: 1rem 1.2rem
+  color: variables.$text-color-secondary
+  border: solid 1px
+  border-color: variables.$text-color-secondary
+  text-decoration: none
 
-    &:hover
-        color: variables.$bg-color
-        background: variables.$text-color
+  &:hover
+    color: variables.$bg-color
+    background: variables.$text-color
 
-@mixin typing-effect($duration: 1s)
+@mixin typing-effect($duration: 1s, $delay: 0s)
   overflow: hidden
   white-space: nowrap
-  animation: typing $duration steps(40, end)
-  
+  display: inline-block
+  animation: typing #{$duration} steps(40, end) #{$delay}
+
   @keyframes typing
     from
       width: 0
     to
       width: 100%
+
+@mixin blink-animation($duration: 1s)
+  @keyframes blink
+    50%
+      border-color: transparent
+
+@mixin delayed-appear($duration: 1s, $delay: 1s)
+  opacity: 0
+  animation: appear-animation $duration ease forwards $delay
+
+  @keyframes appear-animation
+    to
+      opacity: 1

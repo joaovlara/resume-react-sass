@@ -11,6 +11,7 @@
         flex-direction: column
 
     h2
+        @include mixins.typing-effect($duration: 10s)
         @include mixins.center
         color: variables.$text-color
         font-size: 1.5rem
@@ -22,9 +23,13 @@
         color: variables.$text-color-secondary
         font-size: .8rem
         margin-bottom: 1rem
-        line-height: 1.3rem        
+        line-height: 1.3rem
+        
         
     .btn
         @include mixins.btn
         align-self: start
-        
+
+    .typing-about
+        // @include mixins.typing-effect($duration: 8s)
+    

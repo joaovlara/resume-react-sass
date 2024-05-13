@@ -7,15 +7,16 @@
     display: flex
     flex-direction: column
     align-items: center
-    text-align: center
     position: relative
     padding: 3rem 0
 
     h2  
         margin-top: 1rem
         color: variables.$text-color
+        @include mixins.typing-effect($duration: 2s)
 
     img
+        @include mixins.delayed-appear(2s)
         max-width: 60%
         border-radius: 50%
 
@@ -25,5 +26,9 @@
         margin-top: 1rem
         padding: .8rem 1.2rem
 
+        p
+            @include mixins.typing-effect($duration: 4s)
+
     .btn
         @include mixins.btn
+        @include mixins.delayed-appear(5s)
