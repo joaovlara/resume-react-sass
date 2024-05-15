@@ -2,6 +2,7 @@
 @use '../mixins'
 
 #sidebar
+    border: solid 2px variables.$border-color
     background-color: variables.$bg-color
     flex: 1 1 0
     display: flex
@@ -10,10 +11,16 @@
     position: relative
     padding: 3rem 0
 
-    h2  
+    h1
         margin-top: 1rem
         color: variables.$text-color
         @include mixins.typing-effect($duration: 2s)
+
+    .cursor
+        @include mixins.blink-animation
+        height: 1.5em
+        width: 1px
+        background-color: variables.$text-color-secondary
 
     img
         @include mixins.delayed-appear(2s)
@@ -22,12 +29,12 @@
 
     .title
         color: variables.$text-color-secondary
-        border: solid 1px 
+        border: solid 1px
         margin-top: 1rem
         padding: .8rem 1.2rem
 
         p
-            @include mixins.typing-effect($duration: 4s)
+            @include mixins.typing-effect($duration: 3s)
 
     .btn
         @include mixins.btn

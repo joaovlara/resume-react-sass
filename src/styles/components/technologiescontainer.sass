@@ -15,25 +15,27 @@
         padding-left: 1rem
 
     .technology-card
-        @include mixins.center
+        display: flex
         border: 1px solid #333
         width: 45%
-        
+
         @media screen
         @media (max-width:425px)
             width: 100%
         @media ( width: 768px)
             width: 100%
 
-
         h3
             color: variables.$text-color
+            @include mixins.typing-effect($duration: 5s)
 
         svg
+            padding-top: 1rem
+            justify-content: start
             font-size: 4.5rem
             color: variables.$text-color
             @include mixins.delayed-appear(5s)
-       
+
     #js
         svg
             padding-left: 1rem

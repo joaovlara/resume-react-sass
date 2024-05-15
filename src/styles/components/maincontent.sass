@@ -2,6 +2,7 @@
 @use '../mixins'
     
 #main-content
+    border: solid 2px variables.$border-color
     background-color: variables.$bg-color
     flex: 2 1 0
     padding: 3rem
@@ -14,7 +15,6 @@
         @include mixins.typing-effect($duration: 10s)
         @include mixins.center
         color: variables.$text-color
-        font-size: 1.5rem
         margin-bottom: 1.3rem
         justify-content: start
         gap: 1rem      
@@ -29,7 +29,3 @@
     .btn
         @include mixins.btn
         align-self: start
-
-    .typing-about
-        // @include mixins.typing-effect($duration: 8s)
-    

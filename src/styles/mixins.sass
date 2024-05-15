@@ -29,15 +29,29 @@
     to
       width: 100%
 
-@mixin blink-animation($duration: 1s)
-  @keyframes blink
-    50%
-      border-color: transparent
-
 @mixin delayed-appear($duration: 1s, $delay: 1s)
   opacity: 0
   animation: appear-animation $duration ease forwards $delay
 
   @keyframes appear-animation
     to
+      opacity: 1
+
+@mixin blink-animation
+  display: inline-block
+  // background-color: variables.$text-color
+  -webkit-animation: flash 1s infinite
+  animation: flash 1s infinite
+
+  @keyframes flash
+    0%
+      opacity: 0
+
+    49%
+      opacity: 0
+
+    50%
+      opacity: 1
+
+    100%
       opacity: 1
