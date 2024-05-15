@@ -1,9 +1,8 @@
-import {
-  DiGit,
-  DiJsBadge,
-  DiReact,
-} from "react-icons/di";
+
+import { DiGit, DiJsBadge, DiReact, } from "react-icons/di";
 import { FiFigma } from "react-icons/fi";
+
+import TypingAnimation from "./TypingAnimation";
 
 import "../styles/components/technologiescontainer.sass";
 
@@ -37,7 +36,9 @@ const TechnologiesContainer = () => {
             <span>{tech.icon}</span>
             <div className="technology-info">
               <h3>{tech.name}</h3>
-              <p>{tech.text}</p>
+              <p className="typing-about">
+                <TypingAnimation text={tech.text} />
+              </p>
             </div>
           </div>
         ))}

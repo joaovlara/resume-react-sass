@@ -3,7 +3,7 @@ import "../styles/components/informationcontainer.sass";
 import { AiFillPhone, AiOutlineMail, AiFillEnvironment } from "react-icons/ai";
 
 const informations = [
-  { id: "phone", icon: <AiFillPhone />, data: "(41)9 9820-5576" },
+  { id: "phone", icon: <AiFillPhone />, data: "(41)998205576" },
   { id: "email", icon: <AiOutlineMail />, data: "joaovdelara@gmail.com" },
   { id: "pin", icon: <AiFillEnvironment />, data: "Curitiba / PR" },
 ];
