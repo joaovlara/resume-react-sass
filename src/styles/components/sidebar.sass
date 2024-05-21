@@ -16,17 +16,6 @@
         color: variables.$text-color
         @include mixins.typing-effect($duration: 2s)
 
-    .cursor
-        @include mixins.blink-animation
-        height: 1.5em
-        width: 1px
-        background-color: variables.$text-color-secondary
-
-    img
-        @include mixins.delayed-appear(2s)
-        max-width: 60%
-        border-radius: 50%
-
     .title
         color: variables.$text-color-secondary
         border: solid 1px
@@ -39,3 +28,11 @@
     .btn
         @include mixins.btn
         @include mixins.delayed-appear(5s)
+
+img
+    @include mixins.delayed-appear(2s)
+    border-radius: 50%
+    max-width: 60%
+    &:hover
+        cursor: pointer
+        scale: 1.05

@@ -1,41 +1,53 @@
-import React from "react";
+
+import { FaRegCalendarAlt, FaGamepad } from "react-icons/fa";
+import { FaFolderTree } from "react-icons/fa6";
+import { TiWeatherPartlySunny } from "react-icons/ti";
+
+import TypingAnimation from "./TypingAnimation";
+
 import "../styles/components/projectscontainer.sass";
-import calendar from "../img/calendar.jpg";
-import crud from "../img/crud.jpg";
-import weather from "../img/weather.jpg";
 
 const projects = [
+
   {
-    id: "1", nome: "Calendar", img: calendar,
+    id: "calendar", name: "Calendar", icon: <FaRegCalendarAlt />,
+    text: "Aplicação React que permite gerenciar grupos de atividades em determinados dias da semana, realizar sorteios de equipes e exibir os nomes dos membros",
     link: "https://github.com/joaovlara/calendar.git",
-    text: "Descrição do projeto 1"
+
   },
   {
-    id: "2", nome: "Crud-Fullstack", img: crud,
+    id: "game", name: "Game-HUB", icon: <FaGamepad />,
+    text: "Aplicação React em typescript, uma interface responsiva com componentes e objetos que apresentam dados de uma API de informações de jogos.",
+    link: "https://github.com/joaovlara/game-hub.git",
+  },
+  {
+    id: "crud", name: "CRUD", icon: <FaFolderTree />,
+    text: "Aplicação React de uma interface CRUD com integração ao banco de dados mySQL, inclui a criação e implementação da API usando endpoints, bem como o desenvolvimento da interface.",
     link: "https://github.com/joaovlara/CRUD-FullStack.git",
-    text: "Descrição do projeto 2"
+
   },
   {
-    id: "3", nome: "Weather-App", img: weather,
+    id: "weather", name: "Weather", icon: <TiWeatherPartlySunny />,
+    text: "Aplicação React em javascript que exibe a previsão do tempo das cidades pesquisadas usando dados integrados da API do OpenWeatherMap.",
     link: "https://github.com/joaovlara/weather-app.git",
-    text: "Descrição do projeto 3"
-  }
+
+  },
 ];
 
 const ProjectsContainer = () => {
   return (
     <section className="projects-container">
-      <h2>Projetos</h2>
-      <div className="cards-grid">
-        {projects.map(project => (
-          <div className="project-card" key={project.id}>
-            <img src={project.img} alt={project.nome} />
-
-            <div className="card-info">
-              <h3 className="card-title">{project.nome}</h3>
-              <p className="card-text">{project.text}</p>
+      <h2>Projetos </h2>
+      <div className="projects-grid">
+        {projects.map((project) => (
+          <div className="project-card" id={project.id} key={project.id}>
+            <div className="card-body">
+              <span>{project.icon}</span>
+              <div className="project-info">
+                <h3>{project.name}</h3>
+                <p className="typing-about"><TypingAnimation text={project.text} /></p>
+              </div>
             </div>
-
             <a href={project.link} className="btn-card" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
           </div>
         ))}

@@ -2,41 +2,56 @@
 @use '../mixins'
 
 .projects-container
+    margin-bottom: 1rem
 
-    .cards-grid
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-around
-        gap: 1.5rem
+.projects-grid
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    gap: 1.5rem
+
+.project-card
+    border: 1px solid #333
+    min-height: 10rem
+    width: 45%
+    display: flex
+    flex-direction: column
+
+    @media screen and (max-width: 768px)
+        width: 100%
+
+.card-body
+    display: flex
+    align-items: center
+    padding: 1rem
+    flex-grow: 1
+
+    svg
+        margin-right: 1rem
+        font-size: 3rem
+        color: variables.$text-color
         @include mixins.delayed-appear(5s)
 
+.project-info
+    display: flex
+    flex-direction: column
 
-    .project-card
-        border: 1px solid #333
-        position: relative
-        overflow: hidden
+    h3
+        padding-bottom: .5rem
+        color: variables.$text-color
+        @include mixins.typing-effect($duration: 5s)
 
-        h3
-            flex-wrap: wrap
-            color: variables.$text-color
+    p
+        text-align: justify
 
-    .card-info
-        padding: .4rem
+a.btn-card
+    display: block
+    border-top: 1px solid #333
+    color: variables.$text-color
+    width: 100%
+    text-decoration: none
+    padding: .4rem
 
-    .btn-card
-        cursor: pointer
-        transition: .4s
-        background-color: transparent
-        color: variables.$text-color-secondary
-        border: solid 1px #333
-        text-decoration: none
-        display: block
-        position: absolute
-        top: 0
-        left: 0
-        width: 100%
-        height: 100%
-
-        &:hover
-            color: variables.$bg-color
-            background: variables.$text-color
+    &:hover
+        color: variables.$bg-color
+        background: variables.$text-color
