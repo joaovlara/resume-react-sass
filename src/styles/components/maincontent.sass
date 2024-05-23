@@ -30,3 +30,9 @@
     .btn
         @include mixins.btn
         align-self: start
+
+
+.cursor
+    @include mixins.blink-animation
+    width: 1px
+    background-color: variables.$text-color-secondary

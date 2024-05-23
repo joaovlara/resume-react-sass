@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import SocialNetworkContainer from "./SocialNetworkContainer";
 import InformationContainer from "./InformationContainer";
 
-import Avatar1 from "../img/jwao.png";
-import Avatar2 from "../img/jwao2.png";
+import Avatar2 from "../img/jwao.png";
+import Avatar1 from "../img/jwao2.gif";
 
 import "../styles/components/sidebar.sass";
 
