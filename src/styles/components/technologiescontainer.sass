@@ -12,12 +12,14 @@
 
     .technology-info
         margin: 5%
+        margin-bottom: .5%
 
 
     .technology-card
         display: flex
         border: 1px solid #333
         width: 45%
+        min-height: 6rem
 
         @media screen
         @media ( max-width: 768px)
@@ -40,4 +42,20 @@
 
     #js
         svg
+            height: 4.5rem
             padding-left: 1rem
+            color: variables.$yellow
+
+    #react
+        svg
+            color: variables.$blue
+
+    #git
+        svg
+            height: 5rem
+            color: variables.$red
+
+    #figma
+        svg
+            height: 4rem
+            color: variables.$orange

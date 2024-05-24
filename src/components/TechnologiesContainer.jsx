@@ -10,11 +10,11 @@ const technologies = [
 
   {
     id: "js", name: "JavaScript", icon: <DiJsBadge />,
-    text: "Manipulação do DOM, Frameworks, Bibliotecas, APIs, HTML e CSS "
+    text: "Manipulação do DOM, Frameworks, Bibliotecas, APIs, HTML, CSS e Sass "
   },
   {
     id: "react", name: "React", icon: <DiReact />,
-    text: "React Fundamentals, Componentização, Hooks, Roteamento, APIs e Bibliotecas "
+    text: "React, Native, Redux, Componentes, Hooks, Bibliotecas e APIs "
   },
   {
     id: "git", name: "Git", icon: <DiGit />,

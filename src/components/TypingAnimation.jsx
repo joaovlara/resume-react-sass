@@ -18,7 +18,7 @@ const TypingAnimation = ({ text }) => {
       if (char === "<") isTag = true;
       if (char === ">") isTag = false;
       if (isTag) return type();
-      setTimeout(type, 45);
+      setTimeout(type, 38);
     }
 
     type();
