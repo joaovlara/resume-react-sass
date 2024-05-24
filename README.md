@@ -1,10 +1,32 @@
-# React + Vite
+# Jwao Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao meu Portfólio! Este é o lugar onde compartilho meus projetos, habilidades e um pouco sobre mim como desenvolvedor front-end. Gosto de criar experiências digitais incríveis e funcionais que impressionem e inspirem.
 
-Currently, two official plugins are available:
+visite a [demo](https://resume-react-sass.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Responsividade
 
-npm run dev -- --host 
+Este portfólio foi projetado com responsividade. Ele se adapta a diferentes tamanhos de tela, desde smartphones até desktops. Assim, você pode explorar meu trabalho em qualquer dispositivo com facilidade.
+
+![mockup](link)
+
+## Contato
+
+Você pode entrar em contato comigo por meio das seguintes redes sociais:
+
+- **GitHub**: [JoaovLara](https://github.com/JoaovLara)
+- **Instagram**: [@jwao_arte](https://www.instagram.com/jwao_arte/)
+- **LinkedIn**: [João Lara](https://www.linkedin.com/in/joaovlara/)
+- **E-mail**: [joaovdelara@gmail](mailto:joaovdelara@gmail.com)
+
+## Agradeço por Visitar
+
+Agradeço por visitar meu portfólio e explorar meus projetos. Espero que você tenha gostado do meu trabalho. Se você está procurando um desenvolvedor front-end para colaborar em um projeto ou precisa de ajuda com algo relacionado ao desenvolvimento Front-End, fique à vontade para entrar em contato.
+
+
+## Licença
+
+As imagens, GIFs e informações contidas neste repositório são propriedade de João Lara e não estão livres para uso público. Qualquer utilização destes materiais sem autorização expressa é proibida.
+
+
+---

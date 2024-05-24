@@ -22,8 +22,8 @@ const projects = [
   },
   {
     id: "crud", name: "CRUD", icon: <FaFolderTree />,
-    text: "Aplicação React de uma interface CRUD com integração ao banco de dados mySQL, inclui a criação e implementação da API usando endpoints, bem como o desenvolvimento da interface.",
     link: "https://github.com/joaovlara/CRUD-FullStack.git",
+    text: "Aplicação React para uma interface CRUD com integração ao banco de dados MySQL, utilizando Node.js e endpoints, além do desenvolvimento completo da interface."
 
   },
   {

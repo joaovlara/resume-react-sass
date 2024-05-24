@@ -26,7 +26,10 @@ const Sidebar = () => {
             </div>
             <SocialNetworkContainer />
             <InformationContainer />
-            <a href="https://drive.google.com/file/d/19mX9BNREcsYxh6kGjZADtBTAyu0n5fY0/view?usp=sharing" className="btn">download CV</a>
+            <a href="https://drive.google.com/file/d/19mX9BNREcsYxh6kGjZADtBTAyu0n5fY0/view?usp=sharing"
+                className="btn">download CV</a>
+            <a href="https://www.linkedin.com/in/joaovlara/"
+                className="footer-copyright">© 2024 Copyright: João Lara</a>
         </aside>
     );
 }
