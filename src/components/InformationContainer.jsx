@@ -13,9 +13,10 @@ const InformationContainer = () => {
     <section id="information">
       <div className="informations-grid">
         {informations.map((info) => (
-          <div className="info-card" >
+          <div className="info-card" key={info.id}>
             <div className="info-typing" id={info.id}>
-              {info.icon} {info.data}
+              {info.icon}
+              <span>{info.data}</span>
             </div>
             <br />
           </div>

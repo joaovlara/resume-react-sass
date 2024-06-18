@@ -1,31 +1,29 @@
 @use '../variables'
-@use '../mixins' 
-    
+@use '../mixins'
+
 #information
-    @include mixins.center
+  @include mixins.center
+  flex-direction: column
+  padding: 1rem
+  padding-top: .5rem
+  margin-bottom: 1rem
+  min-width: 75%
+
+  .informations-grid
+    display: flex
     flex-direction: column
-    padding: 1rem
-    padding-top: .5rem
-    margin-bottom: 1rem
-    min-width: 75%
+    align-items: center
+    width: 100%
 
-    .info-card    
-        gap: 1rem
-        width: 100%
-        border-bottom: 1px solid #fff3
-    
-    .info-typing
-        padding: .5rem
-        color: variables.$text-color
+  .info-card
+    width: 100%
+    border-bottom: 1px solid #fff3
+    display: flex
+    padding: 1rem 0
 
-        svg
-            color: variables.$text-color-secondary
-
-    #phone
-        @include mixins.typing-effect($duration: 2s)
-
-    #email
-        @include mixins.typing-effect($duration: 4s)
-
-    #pin
-        @include mixins.typing-effect($duration: 6s)
+  .info-typing
+    color: variables.$text-color
+    display: flex
+    align-items: center
+    justify-content: center 
+    gap: 0.5rem 
