@@ -18,7 +18,6 @@ const InformationContainer = () => {
               {info.icon}
               <span>{info.data}</span>
             </div>
-            <br />
           </div>
         ))}
       </div>
