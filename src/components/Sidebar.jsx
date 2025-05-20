@@ -29,7 +29,7 @@ const Sidebar = () => {
             <a href="https://drive.google.com/file/d/1Zyic7fu4gkKX3e4a8jyKi8ZsKgqWRqAz/view?usp=sharing"
                 className="btn">download CV</a>
             <a href="https://www.linkedin.com/in/joaovlara/"
-                className="footer-copyright">© 2024 Copyright: João Lara</a>
+                className="footer-copyright">© 2025 Copyright: João Lara</a>
         </aside>
     );
 }
